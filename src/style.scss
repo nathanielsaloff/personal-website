@@ -1,0 +1,215 @@
+// @font-face {
+//   font-family: 'DroidSerif';
+//   src: url('DroidSerif-Regular-webfont.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'DroidSerif';
+//   src: url('DroidSerif-Italic-webfont.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+$white: #ffffff;
+$black: #000000;
+$scBlue: #197bbd;
+$sOrange: #ff6700;
+$aRed: #d90429;
+$mPurple: #822e81;
+$pPurple: #ff47da;
+$kGreen: #3ec300;
+$sunGlowY: #ffd23f;
+$jonquilY: #f9c80e;
+$lightGrey: #dad2d8;
+$navajoWhite: #f6d8ae;
+
+
+
+// @font-face {
+//   font-family: 'Ubuntu';
+//   src: 
+//     // url('./assets/Fonts/Ubuntu/Ubuntu-Bold.ttf');
+//     // url('./assets/Fonts/Ubuntu/Ubuntu-BoldItalic.ttf'),
+//     // url('./assets/Fonts/Ubuntu/Ubuntu-Italic.ttf'),
+//     // url('./assets/Fonts/Ubuntu/Ubuntu-Light.ttf'),
+//     // url('./assets/Fonts/Ubuntu/Ubuntu-LightItalic.ttf'),
+//     // url('./assets/Fonts/Ubuntu/Ubuntu-Medium.ttf'),
+//     // url('./assets/Fonts/Ubuntu/Ubuntu-MediumItalic.ttf'),
+//     url('./assets/Fonts/Ubuntu/Ubuntu-Regular.ttf');
+
+// }
+
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: 
+//     // url('./assets/Fonts/Montserrat/Montserrat-Black.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-BlackItalic.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-Bold.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-BoldItalic.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-ExtraBold.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-ExtraLight.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-ExtraLightItalic.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-Italic.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-Light.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-LightItalic.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-Medium.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-MediumItalic.ttf'),
+//     url('./assets/Fonts/Montserrat/Montserrat-Regular.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-SemiBold.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-SemiBoldItalic.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-Thin.ttf'),
+//     // url('./assets/Fonts/Montserrat/Montserrat-ThinItalic.ttf');
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500&display=swap');
+
+// prettier-ignore
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  user-select: none;
+  white-space: normal;
+  // overflow: hidden;
+}
+
+@keyframes scrollX {
+  from {
+    transform: translate(0,-10px);
+  }
+  to {
+transform: translate(0, 10px);
+
+  }
+}
+
+@keyframes scrollY {
+  from {
+  transform: translate(-20px, 0);
+}
+to {
+  transform: translate(0, 0);
+}
+}
+@keyframes scrollYLeft {
+  from {
+  transform: translate(20px, 0);
+}
+to {
+  transform: translate(0, 0);
+}
+}
+
+
+
+
+/* Twitter embed */
+// .timeline-widget,#twitter-widget-0{
+//   text-align: center;
+// }
+
+body{
+  // overflow: hidden;
+  // scroll-snap-type: y mandatory;
+  // width:100vw;
+  // height:100vh;
+  // for scroll snap, moving scroll event in to proper elements
+  position:fixed;
+}
+
+iframe[title="Buy Me a Coffee"]{
+  max-width: 90% !important;
+
+}
+
+iframe{
+  width:100% !important;
+  max-width: 500px !important;
+  // max-height: 100% !important;
+  display: inherit !important;
+  margin:auto;
+}
+
+// alwways show scrollbars
+::-webkit-scrollbar {
+  // -webkit-appearance: none;
+  // width: 10px;
+  // background-color: white;
+  
+}
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.timeline-widget{
+  margin:auto
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.8;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote {
+  &:before,
+  &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before,
+  &:after {
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

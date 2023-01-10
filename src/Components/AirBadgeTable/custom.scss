@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500&display=swap');
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+  // display: none;
+  // -webkit-appearance: none;
+  
+}
+
+input[type = date]::-webkit-datetime-edit {
+  text-align: center;
+}
+
+// Custom Scrollbar
+#airBadgeTableContainer ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  background-color: lightgrey;
+}
+// Corner of scroll track color not working
+// #airBadgeTableContainer ::-webkit-scrollbar-corner {
+//   background:lightgrey;
+//   background-color: lightgrey;
+//   color: lightgrey;
+// }
+#airbadgeTableContainer ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: grey;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+#airbadgeTableContainer ::-webkit-scrollbar-track-piece {
+  background-color: #ededed;
+  
+}
+
+
+
+button {
+  // text-decoration: none;
+  // border: none;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+  // background: linear-gradient(rgb(0, 98, 144) 0%, rgb(0, 56, 82) 100%);
+  background:#006290;
+  color:white;
+  border: 1px solid black;
+}
+/* Adding transformation when the button is active */
+
+button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+// button:hover{
+//   background:transparent;
+//   color: black;
+// }

@@ -1,0 +1,36 @@
+import EASINGS from './easings'
+import getScrollTo from './bezier'
+
+const getProgress = ({
+  easingPreset,
+  cubicBezierPoints,
+  duration,
+  runTime
+}) => {
+  const percentTimeElapsed = runTime / duration
+
+  if (EASINGS.hasOwnProperty(easingPreset)) {
+    return EASINGS[easingPreset](percentTimeElapsed)
+  }
+  else if (
+    cubicBezierPoints &&
+    !isNaN(cubicBezierPoints.x1) &&
+    !isNaN(cubicBezierPoints.y1) &&
+    !isNaN(cubicBezierPoints.x2) &&
+    !isNaN(cubicBezierPoints.y2) &&
+    cubicBezierPoints.x1 >= 0 &&
+    cubicBezierPoints.x2 >= 0) {
+    return getScrollTo({
+      percentTimeElapsed,
+      x1: cubicBezierPoints.x1,
+      x2: cubicBezierPoints.x2,
+      y1: cubicBezierPoints.y1,
+      y2: cubicBezierPoints.y2
+    })
+  }
+  console.error('Please enter a valid easing value')
+
+  return false
+}
+
+export default getProgress
