@@ -91,10 +91,10 @@ const App = () => {
         }}
         onClick={scroll}>Scroll test</button> */}
 
-      {/* <LandingSection /> */}
-      {/* <About /> */}
+      <LandingSection />
+      <About />
       <Portfolio />
-      {/* <Contact /> */}
+      <Contact />
       
       {/* <Blog/> */}
       {/* <Closer /> */}
