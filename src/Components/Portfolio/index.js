@@ -164,7 +164,7 @@ const Portfolio = () => {
                   border: '2px solid black',
                   padding:'3vmin'
                 }}
-                href="https://zevysaloff.github.io/half-double/">Check it out!</a>
+                href="https://zevsaloff.github.io/half-double/">Check it out!</a>
               
             </div>
           

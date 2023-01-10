@@ -3,9 +3,6 @@ import {createRoot} from 'react-dom/client'
 import App from './App'
 import reportWebVitals from './reportWebVitals';
 import './style.scss'
-
-// const blerg = flerm => flerm
-
 // import registerServiceWorker from './registerServiceWorker'
 
 // if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object' && process.env.MODE === 'production') {
@@ -41,25 +38,10 @@ ui.addEventListener('scroll', e => {
 // to move scrolling event in for scroll snap
 // ui.style.cssText = 'position: absolute;top: 0px; left: 0px; width: 100vw; height: 100vh; overflow-y: scroll;'
 ui.style.position = 'fixed'
+// scroll events not firing, perhaps because of the scroll libraries or functions.
 document.addEventListener('scroll', e => { console.log('document scrolling') })
 document.body.addEventListener('scroll', e => { console.log('body scrolling') })
-document.getElementById('')
-// const ttScript = document.createElement('script')
-// ttScript.src = 'https://www.tiktok.com/embed.js'
-// ttScript.async = true
-// document.body.insertAdjacentElement('beforeend', ttScript)
-// const igScript = document.createElement('script')
-// igScript.src = '//www.instagram.com/embed.js'
-// igScript.async = true
-// document.body.insertAdjacentElement('beforeend', igScript)
-// const tScript = document.createElement('script')
-// tScript.src = 'https://platform.twitter.com/widgets.js'
-// tScript.async = true
-// document.body.insertAdjacentElement('beforeend', tScript)
-// const shareButtons = document.createElement('script')
-// shareButtons.src = 'https://platform-api.sharethis.com/js/sharethis.js#property=61a53b3ed972540012a29c45&product=inline-follow-buttons'
-// shareButtons.async = true
-// document.head.insertAdjacentElement('beforeend', shareButtons)
+
 // window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {}
 
 /*
@@ -88,7 +70,7 @@ document.head.insertAdjacentElement('beforeend', googleTag)
 // window['dataLayer '] = window['dataLayer '] || []
 // function gtag() { dataLayer.push(arguments) }
 // gtag('js', new Date())
-// gtag('config', 'G-RYGVF7MLXZ')
+// gtag('config', 'G-RYGVF7MLXZ')   
 
 // const coffeeScript = document.createElement('script')
 // coffeeScript.src = 'https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js'

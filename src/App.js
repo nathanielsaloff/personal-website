@@ -90,11 +90,13 @@ const App = () => {
           top: '10vmin'
         }}
         onClick={scroll}>Scroll test</button> */}
-      <LandingSection />
-      <About />
+
+      {/* <LandingSection /> */}
+      {/* <About /> */}
       <Portfolio />
+      {/* <Contact /> */}
+      
       {/* <Blog/> */}
-      <Contact />
       {/* <Closer /> */}
       {/* <TestingDeployment /> */}
       {/* <Portfolio/> */}
