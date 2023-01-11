@@ -13,9 +13,19 @@ import { useActor } from '@xstate/react'
 import TestingDeployment from './Components/TestingDeployment'
 import AirBadgeTable from './Components/AirBadgeTable'
 // import Portfolio from './Components/Portfolio Old'
-import ogImage from './media/ogImage.png'
 // window.history.scrollRestoration = 'auto'// 'manual, auto'
 const App = () => {
+  const innerWidth = window.innerWidth
+  const innerHeight = window.innerHeight
+  const fullWidth = window.outerWidth
+  const fullHeight = window.outerHeight
+  const appWidth =  `${innerWidth}px`
+  const appHeight =  `${innerHeight}px`
+  // eslint-disable-next-line no-restricted-globals
+  const marginTopAndBottom = `${outerHeight - innerHeight}px`
+  // eslint-disable-next-line no-restricted-globals
+  const marginLeftAndRight = `${outerWidth - innerWidth}px`
+  console.log(appHeight)
   const appStyles = {
     // background: diraColors.diraBlack,
     color: colors.aRed
@@ -65,12 +75,14 @@ const App = () => {
         position: 'absolute',
         top: '0px',
         left: '0px',
-        width: '100vw',
-        height: '100vh',
+        // width: appWidth,
+        // height: appHeight,
+        // marginTop: marginTopAndBottom,
+        // marginBottom: marginTopAndBottom,
         overflow: 'hidden',
         overflowY: 'scroll',
-        // width: '100vw',
-        // height: '100vh',
+        width: '100vw',
+        height: '100vh',
         background: "white",
         boxSizing: 'border-box',
         scrollSnapType: 'y mandatory'
@@ -79,7 +91,7 @@ const App = () => {
         // console.log('mySite scrolling')
       }}
     >
-      <img src={ogImage} style={{ display: 'none' }}/>
+
       {/* <Navigator /> */}
       {/* <button
         style={{

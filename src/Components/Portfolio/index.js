@@ -30,6 +30,37 @@ const Portfolio = () => {
     overflowY: 'scroll',
     position:'relative'
   }
+  {
+    //  No longer animating buttons so not needed fgor this but good code if an animation is needed
+    // const clickAnimation = [
+    //     [ 
+          
+    //         {
+    //             borderLeftColor: "white",
+    //             borderTopColor: "white",
+    //             borderBottomColor: "dimgrey",
+    //             borderRightColor: "dimgrey",
+    //             boxShadow: "2px 2px 0px 0px rgba(0,0,0,0.75)"
+    //         },
+    //         {
+    //             borderLeftColor: "dimgrey",
+    //             borderTopColor: "dimgrey",
+    //             borderBottomColor: "white",
+    //             borderRightColor: "white",
+    //             boxShadow: "0px 0px 0px 0px rgba(0,0,0,0.75)"
+    //         },
+    //         {
+    //             borderLeftColor: "white",
+    //             borderTopColor: "white",
+    //             borderBottomColor: "dimgrey",
+    //             borderRightColor: "dimgrey",
+    //             boxShadow: "2px 2px 0px 0px rgba(0,0,0,0.75)"
+    //         }
+    //     ],
+    //     200
+    // ]
+    // buttonRef.current.animate(...clickAnimation,15)
+}
   return (
     <div
       id="portfolioSection"
@@ -148,9 +179,7 @@ const Portfolio = () => {
             />
             <div>Half Double</div>
             <div className='itemDescription'
-                style={{
-
-                }}
+                style={{}}
             >
               Half double is a game I coded where the user is assigned a random "target number" that is a multiple of 2. the user must go up or down step by step which either doubles or halves their "current number" until it matches the target number. The user trie,s to get as many matches as possible before the minute is up.
               I coded it with React using responsive design, state management using state machines, browser storage, custom fonts
@@ -185,20 +214,19 @@ const Portfolio = () => {
                 animationIterationCount: 'infinite',
                 animationDirection: 'alternate'
               }}
-      >
-          <img
-          src={leftImage}
-          style={{
-            height: '100%',
-            width:"100%",
-            position: 'absolute',
-            zIndex: 0,
-            left:0,
-            bottom:0,
-            opacity: 0.2
-          }}
-        />
-        
+            >
+              <img
+              src={leftImage}
+              style={{
+                height: '100%',
+                width:"100%",
+                position: 'absolute',
+                zIndex: 0,
+                left:0,
+                bottom:0,
+                opacity: 0.2
+              }}
+              />
             </div>
             <img className='backgroundImage'
               src={tableImage}
@@ -220,7 +248,7 @@ const Portfolio = () => {
               This is a data table I coded which can recieve data from a database and display it to the user in a clear format with data flitering by search and option selection. Its also highly editable allowing the user to select which columns to display and displays different columns depending on if the user is on mobile or desktop.
               I coded this table with React using responsive design, hover modals, state management with state machines, data sorting functions
               <br/><br/>
-              <div
+              <div id="showTableButton"
                 style={{
                   textDecoration: 'none',
                   fontFamily: 'Spartan',

@@ -1,17 +1,23 @@
 import React, { Component, useEffect, useRef } from 'react'
 import colors from '../../colors'
 // import backgroundImage from '../../assets/photoForSite.png'
-import backgroundImage from '../../assets/Portrait3.png'
+import landingPortrait from '../../assets/zev-landing-portrait.png'
+import './iconAnimation.scss'
 
 // import Logo from '../../Logo'
 
 const LandingSection = () => {
   const appStyles = { color: 'blue' }
   const iconsRef = useRef(null)
+
   const iconsStyles = {
     width: '13vmin',
     fill: 'blue',
-    position: 'absolute'
+    position: 'absolute', 
+    animationName: 'iconAnimation',
+    animationDuration: '20s',
+    animationIterationCount: 'infinite',
+    animationDirection: 'alternate'
   }
 
   // paralax function
@@ -35,7 +41,7 @@ const LandingSection = () => {
         width: '100vw',
         height: '100vh',
         // background: colors.aRed as unknown as string,
-        padding: '50px',
+        // padding: '50px',
         boxSizing: 'border-box',
         margin: 0,
         // display: 'flex',
@@ -52,20 +58,19 @@ const LandingSection = () => {
 
       }}
     >
-      <div className="landingIcons"
+      <div id="landingIcons"
         ref={iconsRef}
         style={{
           position: 'absolute',
           width: '100vw',
           height: '100vh',
           bottom: 0,
-          zIndex: 2,
-          pointerEvents: 'none'
+          zIndex: 1,
+          pointerEvents: 'none',
+          opacity:0.6
         }}>
-          <svg id="alienGun"
-            viewBox="0 0 64 64" x="0px" y="0px"
-            style={{ ...iconsStyles, top: '7%', left: '14%' }}
-          >
+          <svg id="alienGun" style={{ ...iconsStyles, top: '7%', left: '14%',animationDelay:"0.2s", animationDirection:'reverse' }}
+            viewBox="0 0 64 64" x="0px" y="0px">
   
             <g data-name="30-alien gun">
               <path id="gun"
@@ -91,8 +96,7 @@ const LandingSection = () => {
   
             </g>
           </svg>
-          <svg id="astronaut"
-            style={{ ...iconsStyles, bottom: '14%', right: '14%' }}
+          <svg id="astronaut" style={{ ...iconsStyles, bottom: '14%', right: '14%',animartionDelay:'0.5s',animationDirection:'alternate' }}
             viewBox="0 0 64 64" x="0px" y="0px">
             <g data-name="12-astronaut">
               <path id="naut"
@@ -118,8 +122,7 @@ const LandingSection = () => {
               <rect className="suitButton" style={{ fill: colors.mPurple }} x="25" y="53" width="6" height="2"></rect>
             </g>
           </svg>
-          <svg id="handshake"
-            style={{ ...iconsStyles, top: '40%', right: '10%' }}
+          <svg id="handshake" style={{ ...iconsStyles, top: '40%', right: '10%',animationDelay:"1.5s", animationDirection:'normal' }}
             viewBox="0 0 64 64" x="0px" y="0px">
             <g data-name="26-robot and human handshake">
               <path id="robotHand"
@@ -132,10 +135,8 @@ const LandingSection = () => {
               </path>
             </g>
           </svg>
-          <svg id="coolGuy"
-            viewBox="0 0 64 64" x="0px" y="0px"
-            style={{ ...iconsStyles, top: '25%', left: '42%' }}
-          >
+          <svg id="coolGuy" style={{ ...iconsStyles, top: '25%', left: '42%',animationDelay:"1s",animationDirection:'alternate-reverse' }}
+            viewBox="0 0 64 64" x="0px" y="0px">
             <g data-name="27-scientist">
               <path id="guyAndGlasses"
                 style={{ fill: colors.aRed }}
@@ -145,10 +146,8 @@ const LandingSection = () => {
               <rect className="coolGuyMouth" style={{ fill: colors.navajoWhite }} x="30" y="43" width="4" height="2"></rect>
             </g>
           </svg>
-          <svg id="wristTech"
-            viewBox="0 0 64 64" x="0px" y="0px"
-            style={{ ...iconsStyles, bottom: '82%', right: '17%' }}
-          >
+          <svg id="wristTech" style={{ ...iconsStyles, bottom: '82%', right: '17%',animationDelay:"2s",animationDirection:'reverse' }}
+          viewBox="0 0 64 64" x="0px" y="0px">
             <g data-name="18-futuristic phone">
               <path id="hand" style={{ fill: colors.navajoWhite }}
                 d="M62.208,42.347a4.434,4.434,0,0,0-.76-7.126l-4.043-2.332a3.956,3.956,0,0,0-2.5-.889H40a1.006,1.006,0,0,0-.555.168L27.7,40H17v2H28a1.006,1.006,0,0,0,.555-.168L40.3,34h14.6a1.952,1.952,0,0,1,1.273.471.965.965,0,0,0,.152.107l4.118,2.375a2.415,2.415,0,0,1,.438,3.872l-5.44-2.72A1,1,0,0,0,55,38H43a1,1,0,0,0-1,1,11.882,11.882,0,0,1-6.6,10.684l-2.844,1.421a1,1,0,0,0,.894,1.79l2.845-1.422A13.924,13.924,0,0,0,42,46.213V47a1,1,0,0,0,1,1v3a1,1,0,0,0,1,1h1v3a1,1,0,0,0,1,1h4.52l2.748,3.436-9.3,2.536L30.21,59.022A1.062,1.062,0,0,0,30,59H2V42H9V40H1a1,1,0,0,0-1,1V60a1,1,0,0,0,1,1H29.9l13.9,2.978A1.062,1.062,0,0,0,44,64a1.016,1.016,0,0,0,.263-.035l11.053-3.017h0l.015-.006a7.363,7.363,0,0,0,4.477-4.25A4.587,4.587,0,0,0,62,52.764v-.6l.241-.724a9.353,9.353,0,0,0-.18-5.479A6.291,6.291,0,0,0,62.208,42.347Zm-6.567,3.884A1.006,1.006,0,0,0,55,46H44V44H54.764l5.453,2.726a7.8,7.8,0,0,1,.258,3.534Zm4.56-3.512a3.43,3.43,0,0,1,.133,1.83l-4.887-2.444A1,1,0,0,0,55,42H44V40H54.764ZM55.319,58.8l-3.538-4.422A1,1,0,0,0,51,54H47V52h6.586l4.242,4.242A5.362,5.362,0,0,1,55.319,58.8Zm3.807-4.085-4.419-4.419A1,1,0,0,0,54,50H45V48h9.638L60,52.469v.3A2.6,2.6,0,0,1,59.126,54.712Z">
@@ -168,10 +167,8 @@ const LandingSection = () => {
               <rect className="projectionLines" style={{ fill: colors.jonquilY }} x="4" y="16" width="4" height="2"></rect>
             </g>
           </svg>
-          <svg id="timeMachine"
-            viewBox="0 0 64 64" x="0px" y="0px"
-            style={{ ...iconsStyles, top: '55%', right: '38%' }}
-          >
+          <svg id="timeMachine" style={{ ...iconsStyles, top: '55%', right: '38%',animationDelay:"0.5s",animationDirection:'alternate' }}
+          viewBox="0 0 64 64" x="0px" y="0px">
             <g data-name="17-time machine">
               <path id="innerCircle"
                 style={{ fill: colors.kGreen }}
@@ -183,9 +180,8 @@ const LandingSection = () => {
               </path>
             </g>
           </svg>
-          <svg id="ufo" viewBox="0 0 64 64" x="0px" y="0px"
-            style={{ ...iconsStyles, bottom: '49%', right: '70%' }}
-          >
+          <svg id="ufo" style={{ ...iconsStyles, bottom: '49%', right: '70%',animationDelay:"1.5s",animationDirection:'alternate-reverse' }} 
+          viewBox="0 0 64 64" x="0px" y="0px">
             <g data-name="20-UFO">
               <path id="ufoShell"
                 style={{ fill: colors.sunGlowY }}
@@ -233,9 +229,8 @@ const LandingSection = () => {
               </path>
             </g>
           </svg>
-          <svg id="vr" viewBox="0 0 64 64" x="0px" y="0px"
-            style={{ ...iconsStyles, bottom: '19%', left: '10%' }}
-          >
+          <svg id="vr" style={{ ...iconsStyles, bottom: '19%', left: '10%',animationDelay:"2s",animationDirection:'normal' }} 
+          viewBox="0 0 64 64" x="0px" y="0px">
             <g data-name="19-VR program">
               <path className="vrScreens"
                 style={{ fill: colors.aRed }}
@@ -261,23 +256,27 @@ const LandingSection = () => {
           </svg>
       </div>
 
-      <img src={backgroundImage}
+      <img id="landingPortrait" 
+        src={landingPortrait}
         style={{
-
-          height: '100vh',
+          // width:"100%",
+          height: '90%',
           position: 'absolute',
-          zIndex: 0,
+          zIndex: 2,
           bottom: 0,
-          opacity: 0.2
+          opacity: 0.5,
+          display:"block"
         }}
       />
-      <div
+      <div id="nameAndTitle"
         style={{
-          color: colors.white,
+          // color: 'darkgray',
+          color:'black',
+          // opacity:0.5,
           // fontFamily: 'Ubuntu',
           // fontWeight: 'bold',
           margin: '3vmax 0',
-          fontSize: '4vmax',
+          fontSize: '7vmax',
           fontWeight:'900',
           padding: '5vmin',
           flex: 1,
@@ -285,22 +284,22 @@ const LandingSection = () => {
           textAlign: 'center',
           fontFamily: 'Spartan, sans-serif',
           fontWeight: '500',
-          marginBottom: '10vmin',
-          // position: 'relative',
-          top: '65%',
-          zIndex: 1
+          // marginBottom: '10vmin',
+          position: 'absolute',
+          top: '5%',
+          zIndex: 3
         }}
       >
         {/* <Logo dimensions={{ width: '100px', height: '100px' } }/> */}
         {/* <br /> */}
-        nathaniel
+        zev
         <div
           style={{
             // color:colors.aRed,
             // fontFamily:'Montserrat',
-            fontSize:'2vmax'
+            fontSize:'3vmax'
           }}
-        >Developer</div>
+        >Coder</div>
         
         {/* <iframe
           style={{
