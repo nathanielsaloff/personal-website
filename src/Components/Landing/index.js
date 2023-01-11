@@ -67,7 +67,7 @@ const LandingSection = () => {
           bottom: 0,
           zIndex: 1,
           pointerEvents: 'none',
-          opacity:0.6
+          // opacity:0.6
         }}>
           <svg id="alienGun" style={{ ...iconsStyles, top: '7%', left: '14%',animationDelay:"0.2s", animationDirection:'reverse' }}
             viewBox="0 0 64 64" x="0px" y="0px">
