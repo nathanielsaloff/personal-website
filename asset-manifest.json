@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.f89d69aa.css",
-    "main.js": "/personal-website/static/js/main.56e7180f.js",
+    "main.css": "/personal-website/static/css/main.e78c782f.css",
+    "main.js": "/personal-website/static/js/main.334a8839.js",
     "static/js/787.5809834d.chunk.js": "/personal-website/static/js/787.5809834d.chunk.js",
-    "static/media/Portrait3.png": "/personal-website/static/media/Portrait3.95c5ce16f0abdf0a6da2.png",
-    "static/media/ogImage.png": "/personal-website/static/media/ogImage.422bb5a032f40f76704e.png",
+    "static/media/zev-landing-portrait.png": "/personal-website/static/media/zev-landing-portrait.055e06b680bcb4a968f2.png",
     "static/media/flyingCar.svg": "/personal-website/static/media/flyingCar.049a9973b32d9343ab7b2e05509bebde.svg",
     "static/media/web.svg": "/personal-website/static/media/web.464359bc52ff997a13c456beb29b1a92.svg",
     "static/media/table.svg": "/personal-website/static/media/table.b6e7c29309eaa7521f954e74c7347129.svg",
@@ -12,12 +11,12 @@
     "static/media/left.svg": "/personal-website/static/media/left.dbdc639fec634dd9ddcfc8d0a6304b39.svg",
     "static/media/right.svg": "/personal-website/static/media/right.32622a6df7dd2ac82a967746e9833c03.svg",
     "static/media/HD.svg": "/personal-website/static/media/HD.2a9dd9460a51230e309520e70fe9cad1.svg",
-    "main.f89d69aa.css.map": "/personal-website/static/css/main.f89d69aa.css.map",
-    "main.56e7180f.js.map": "/personal-website/static/js/main.56e7180f.js.map",
+    "main.e78c782f.css.map": "/personal-website/static/css/main.e78c782f.css.map",
+    "main.334a8839.js.map": "/personal-website/static/js/main.334a8839.js.map",
     "787.5809834d.chunk.js.map": "/personal-website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f89d69aa.css",
-    "static/js/main.56e7180f.js"
+    "static/css/main.e78c782f.css",
+    "static/js/main.334a8839.js"
   ]
 }
