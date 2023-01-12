@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useRef, useState } from 'react'
-import colors from '../../colors'
+import colors from '../../../colors'
 import AirBadgeTable from '../AirBadgeTable'
 import { socketSampleInterpreter } from './socketFetchMachine'
 import { useActor } from '@xstate/react'

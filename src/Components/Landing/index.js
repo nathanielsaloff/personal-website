@@ -47,8 +47,6 @@ const LandingSection = () => {
         flexWrap: 'wrap',
         position: 'relative',
         display: 'flex',
-        
-
       }}
     >
       <div id="landingIcons"
