@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useRef } from 'react'
-import colors from '../../colors'
+import colors from '../../../colors'
 import backgroundImage from '../../assets/flyingCar.svg'
 
 // import Logo from '../../Logo'

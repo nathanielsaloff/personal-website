@@ -14,7 +14,7 @@ import leftImage from '../../assets/left.svg'
 // gsap.registerPlugin(MotionPathPlugin, MotionPathHelper, CustomEase, DrawSVGPlugin, MotionPathPlugin)
 // import { TikTok } from 'react-tiktok'
 
-const Portfolio = () => {
+const Works = () => {
   const appStyles = { color: 'blue' }
   const pStyles = { margin: '2vmin',fontFamily: 'Spartan, sans-serif' }
   const portfolioItemStyles = {
@@ -68,7 +68,8 @@ const Portfolio = () => {
         scrollSnapAlign: 'start',
         width: '100%',
         height: '100%',
-        padding: '5vmin',
+        padding: '10vh 5vw',
+
         boxSizing: 'border-box',
         boxShadow: 'rgb(155 155 155 / 56%) 0px 0px 15px 0px inset',
         display: 'flex',
@@ -83,7 +84,7 @@ const Portfolio = () => {
             fontFamily: 'Spartan, sans-serif',
           }}
         >
-          Work
+          Works
         </div>   
         <div id="portfolioContainer"
         // scrollable sideways
@@ -270,4 +271,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Works

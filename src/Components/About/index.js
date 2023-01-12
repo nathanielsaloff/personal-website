@@ -23,7 +23,7 @@ const About = () => {
         scrollSnapAlign: 'start',
         width: '100%',
         height: '100%',
-        padding: '5vmin',
+        padding: '10vh 5vw',
         boxSizing: 'border-box',
         boxShadow: 'rgb(155 155 155 / 56%) 0px 0px 15px 0px inset',
         display: 'flex',

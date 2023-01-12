@@ -1,6 +1,6 @@
 
 import React, { Component, useEffect, useRef } from 'react'
-import colors from './colors'
+import colors from '../../colors'
 
 const Logo = ({ dimensions }) => {
   console.log('nav working')
@@ -14,7 +14,6 @@ const Logo = ({ dimensions }) => {
 
   console.log(dimensions)
   return (
-
     <svg xmlns="http://www.w3.org/2000/svg"
       style={{
         ...dimensions,

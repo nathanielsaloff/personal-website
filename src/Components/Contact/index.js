@@ -16,8 +16,8 @@ const Contact = () => {
       id="contact"
       style={{
         scrollSnapAlign: 'start',
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
         padding: '5vmin',
         boxSizing: 'border-box',
         margin: 0,
@@ -28,7 +28,7 @@ const Contact = () => {
         flex: 1,
         whiteSpace: 'nowrap',
         textAlign: 'center',
-        padding: '2vmin',
+        padding: '10vh 5vw',
         borderRadius: '10px',
         boxShadow: 'rgb(255 255 255 / 56%) 0px 0px 15px 0px',
         width: '100%',

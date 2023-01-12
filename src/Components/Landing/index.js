@@ -38,8 +38,8 @@ const LandingSection = () => {
       id="landing"
       style={{
         scrollSnapAlign: 'start',
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
         // background: colors.aRed as unknown as string,
         // padding: '50px',
         boxSizing: 'border-box',
@@ -62,8 +62,8 @@ const LandingSection = () => {
         ref={iconsRef}
         style={{
           position: 'absolute',
-          width: '100vw',
-          height: '100vh',
+          width: '100%',
+          height: '100%',
           bottom: 0,
           zIndex: 1,
           pointerEvents: 'none',
@@ -256,18 +256,30 @@ const LandingSection = () => {
           </svg>
       </div>
 
-      <img id="landingPortrait" 
+      <div id="landingPortrait" 
+      
+      style={{
+        backgroundImage: `url(${landingPortrait})`,
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+        width:"100%",
+        height: '100%',
+        position: 'absolute',
+        zIndex: 2,
+        bottom: 0,
+        opacity: 0.6,
+        display:"block",
+        userSelect:'none',
+        pointerEvents:'none'
+      }}
+      >
+        
+      </div>
+
+      {/* <img id="landingPortrait" 
         src={landingPortrait}
-        style={{
-          // width:"100%",
-          height: '90%',
-          position: 'absolute',
-          zIndex: 2,
-          bottom: 0,
-          opacity: 0.5,
-          display:"block"
-        }}
-      />
+      /> */}
       <div id="nameAndTitle"
         style={{
           // color: 'darkgray',

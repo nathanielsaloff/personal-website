@@ -1,31 +1,24 @@
 
 import React, { Component, useEffect, useRef } from 'react'
-import { Navigator } from './Components/Navigator'
 import colors from './colors'
 import LandingSection from './Components/Landing'
 import About from './Components/About'
-import Portfolio from './Components/Portfolio'
-import Blog from './Components/Blog'
+import Works from './Components/Works'
 import Contact from './Components/Contact'
-import Closer from './Components/Closer'
+
+// Unused components
+// import { Navigator } from './Components/Navigator'
+// import Blog from './Components/Blog'
+// import Closer from './Components/_Archived_/Closer'
+// import TestingDeployment from './Components/_Archived_/TestingDeployment'
+// import AirBadgeTable from './Components/_Archived_/AirBadgeTable'
 // import pageScrollerInterpreter, { scroll } from './mainScroller'
-import { useActor } from '@xstate/react'
-import TestingDeployment from './Components/TestingDeployment'
-import AirBadgeTable from './Components/AirBadgeTable'
-// import Portfolio from './Components/Portfolio Old'
-// window.history.scrollRestoration = 'auto'// 'manual, auto'
+
+// Unused functions 
+// import { useActor } from '@xstate/react'
+
 const App = () => {
-  const innerWidth = window.innerWidth
-  const innerHeight = window.innerHeight
-  const fullWidth = window.outerWidth
-  const fullHeight = window.outerHeight
-  const appWidth =  `${innerWidth}px`
-  const appHeight =  `${innerHeight}px`
-  // eslint-disable-next-line no-restricted-globals
-  const marginTopAndBottom = `${outerHeight - innerHeight}px`
-  // eslint-disable-next-line no-restricted-globals
-  const marginLeftAndRight = `${outerWidth - innerWidth}px`
-  console.log(appHeight)
+
   const appStyles = {
     // background: diraColors.diraBlack,
     color: colors.aRed
@@ -33,14 +26,6 @@ const App = () => {
 
   // const [state, send] = useActor(pageScrollerInterpreter)
   // const { scrollTop } = document.documentElement
-
-  // useEffect(() => {
-  //   // console.log(document.getElementById('landing'))
-  //   send({ type: 'SCROLL', section: 'landing' })
-  //   return () => {
-  //     // cleanup
-  //   }
-  // }, [/* run flags */])
 
   // useEffect(() => {
   //   if (state.value === 'idle') {
@@ -67,6 +52,7 @@ const App = () => {
   //     // cleanup
   //   }
   // }, [state.value])
+
   return (
     <div
       id="mySite"
@@ -75,10 +61,6 @@ const App = () => {
         position: 'absolute',
         top: '0px',
         left: '0px',
-        // width: appWidth,
-        // height: appHeight,
-        // marginTop: marginTopAndBottom,
-        // marginBottom: marginTopAndBottom,
         overflow: 'hidden',
         overflowY: 'scroll',
         width: '100vw',
@@ -105,7 +87,7 @@ const App = () => {
 
       <LandingSection />
       <About />
-      <Portfolio />
+      <Works />
       <Contact />
       
       {/* <Blog/> */}
