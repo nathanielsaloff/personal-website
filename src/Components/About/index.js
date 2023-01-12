@@ -25,7 +25,7 @@ const About = () => {
         height: '100%',
         padding: '10vh 5vw',
         boxSizing: 'border-box',
-        boxShadow: 'rgb(155 155 155 / 56%) 0px 0px 15px 0px inset',
+        // boxShadow: 'rgb(155 155 155 / 56%) 0px 0px 15px 0px inset',
         display: 'flex',
         flexDirection: 'column'
       }}

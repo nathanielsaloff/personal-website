@@ -30,7 +30,7 @@ const Contact = () => {
         textAlign: 'center',
         padding: '10vh 5vw',
         borderRadius: '10px',
-        boxShadow: 'rgb(255 255 255 / 56%) 0px 0px 15px 0px',
+        // boxShadow: 'rgb(255 255 255 / 56%) 0px 0px 15px 0px',
         width: '100%',
         height: '100%',
         // why flex here?
