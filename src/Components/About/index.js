@@ -1,7 +1,6 @@
 import React, { Component, useEffect, useRef } from 'react'
 import colors from '../../colors'
 // import { TimelineMax/* , DrawSVGPlugin, CustomEase, MotionPathPlugin, MotionPathHelper */ } from 'gsap/all'
-import globalStyles from '../../globalStyles.js'
 
 // gsap.registerPlugin(TimelineMax)
 

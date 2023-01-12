@@ -40,21 +40,14 @@ const LandingSection = () => {
         scrollSnapAlign: 'start',
         width: '100%',
         height: '100%',
-        // background: colors.aRed as unknown as string,
-        // padding: '50px',
         boxSizing: 'border-box',
         margin: 0,
-        // display: 'flex',
         justifyContent: 'space-evenly',
         alignItems: 'flex-end',
         flexWrap: 'wrap',
-        // background: `url(${backgroundImage})`,
-        // backgroundRepeat: 'no-repeat',
-        // // bottom
-        // backgroundPosition: 'center',
-        // backgroundSize: 'contain',
         position: 'relative',
-        display: 'flex'
+        display: 'flex',
+        
 
       }}
     >
@@ -264,10 +257,10 @@ const LandingSection = () => {
         backgroundPosition:'center',
         backgroundSize:'contain',
         width:"100%",
-        height: '100%',
+        height: '50%',
         position: 'absolute',
         zIndex: 2,
-        bottom: 0,
+        top: 0,
         opacity: 0.6,
         display:"block",
         userSelect:'none',
@@ -298,8 +291,9 @@ const LandingSection = () => {
           fontWeight: '500',
           // marginBottom: '10vmin',
           position: 'absolute',
-          top: '5%',
-          zIndex: 3
+          bottom: '15vh',
+          zIndex: 3,
+          lineHeight:'normal'
         }}
       >
         {/* <Logo dimensions={{ width: '100px', height: '100px' } }/> */}
@@ -309,9 +303,9 @@ const LandingSection = () => {
           style={{
             // color:colors.aRed,
             // fontFamily:'Montserrat',
-            fontSize:'3vmax'
+            fontSize:'50%'
           }}
-        >Coder</div>
+        >coder</div>
         
         {/* <iframe
           style={{
