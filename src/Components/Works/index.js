@@ -31,8 +31,10 @@ const Works = () => {
     position:'relative'
   }
 
-  const arrowClick = () => {
-
+  const arrowClick = (e) => {
+    e.stopPropagation()
+    console.log(e)
+    
   }
 
   {
@@ -67,7 +69,7 @@ const Works = () => {
     // buttonRef.current.animate(...clickAnimation,15)
   }
   return (
-    <div id="portfolioSection"
+    <div id="worksSection"
       style={{
         scrollSnapAlign: 'start',
         width: '100%',
@@ -90,7 +92,7 @@ const Works = () => {
           Works
       </div>   
 
-        {/* scrollable sideways */}
+        {/* scrollable sideways, this is the container you want to scroll on arrow click */}
       <div id="worksContentContainer"
         style={{
         textAlign: 'center',
@@ -116,44 +118,46 @@ const Works = () => {
           ...portfolioItemStyles,
           }}
         >
-          <div className="swipeIcon"
-        style={{
-          width: '15vmin',
-          height:'15vmin',
-          position: 'absolute',
-          bottom: '3vmin',
-          right: '3vmin',
-          zIndex: 1,
-          animationName: 'scrollY',
-          animationDuration: '2s',
-          animationIterationCount: 'infinite',
-          animationDirection: 'alternate'
-        }}
-      >
+          <div className="swipeRightIcon"
+            style={{
+              width: '15vmin',
+              height:'15vmin',
+              position: 'absolute',
+              bottom: '3vmin',
+              right: '3vmin',
+              zIndex: 1,
+              animationName: 'scrollY',
+              animationDuration: '2s',
+              animationIterationCount: 'infinite',
+              animationDirection: 'alternate'
+            }}
+
+            onClick={arrowClick}
+          >
+
           <img src={rightArrow}
-          style={{
-            height: '100%',
-            width:"100%",
-            position: 'absolute',
-            zIndex: 0,
-            left:0,
-            bottom:0,
-            opacity: 0.2
-          }}
-          onClick={arrowClick}
-        />
+            style={{
+              height: '100%',
+              width:"100%",
+              position: 'absolute',
+              zIndex: 0,
+              left:0,
+              bottom:0,
+              opacity: 0.2
+            }}
+          />
         
           </div>
 
           <img src={webImage}
-          style={{
-            height: '100%',
-            width:"100%",
-            position: 'absolute',
-            zIndex: 0,
-            left:0,
-            bottom:0,
-            opacity: 0.2
+            style={{
+              height: '100%',
+              width:"100%",
+              position: 'absolute',
+              zIndex: 0,
+              left:0,
+              bottom:0,
+              opacity: 0.2,
             }}
           />
 
@@ -173,6 +177,69 @@ const Works = () => {
         <div id="halfDouble"
           style={portfolioItemStyles}
         >
+
+        <div className="swipeLeftIcon"
+          style={{
+            width: '15vmin',
+            height:'15vmin',
+            position: 'absolute',
+            bottom: '3vmin',
+            left: '3vmin',
+            zIndex: 1,
+            animationName: 'scrollYLeft',
+            animationDuration: '2s',
+            animationIterationCount: 'infinite',
+            animationDirection: 'alternate'
+          }}
+
+          onClick={arrowClick}
+
+        >
+          <img src={leftArrow}
+          style={{
+            height: '100%',
+            width:"100%",
+            position: 'absolute',
+            zIndex: 0,
+            left:0,
+            bottom:0,
+            opacity: 0.2
+          }}
+          />
+
+        </div>
+
+        <div className="swipeRightIcon"
+          style={{
+            width: '15vmin',
+            height:'15vmin',
+            position: 'absolute',
+            bottom: '3vmin',
+            right: '3vmin',
+            zIndex: 1,
+            animationName: 'scrollYRight',
+            animationDuration: '2s',
+            animationIterationCount: 'infinite',
+            animationDirection: 'alternate'
+          }}
+
+          onClick={arrowClick}
+
+        >
+          <img src={rightArrow}
+          style={{
+            height: '100%',
+            width:"100%",
+            position: 'absolute',
+            zIndex: 0,
+            left:0,
+            bottom:0,
+            opacity: 0.2
+          }}
+          />
+        
+        </div>
+
           <img src={hdIcon}
             style={{
             height: '100%',
@@ -205,13 +272,15 @@ const Works = () => {
             href="https://zevsaloff.github.io/half-double/">Check it out!</a>
           
           </div>
+
+          
       
         </div>  
 
         <div id="dataTable"
           style={portfolioItemStyles}
         >
-          <div className="swipeIcon"
+          <div className="swipeLeftIcon"
           style={{
             width: '15vmin',
             height:'15vmin',
@@ -224,6 +293,9 @@ const Works = () => {
             animationIterationCount: 'infinite',
             animationDirection: 'alternate'
           }}
+
+          onClick={arrowClick}
+
         >
           <img src={leftArrow}
           style={{

@@ -29,7 +29,6 @@ import './style.scss'
 
 */
 
-
 // Adobe Fonts
   const adobeFonts = document.createElement('link')
   adobeFonts.setAttribute('href', 'https://use.typekit.net/fat4lop.css')
