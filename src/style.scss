@@ -1,16 +1,53 @@
-// @font-face {
-//   font-family: 'DroidSerif';
-//   src: url('DroidSerif-Regular-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+/* @font-face {
+  font-family: 'DroidSerif';
+  src: url('DroidSerif-Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: 'DroidSerif';
-//   src: url('DroidSerif-Italic-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: italic;
-// }
+@font-face {
+  font-family: 'DroidSerif';
+  src: url('DroidSerif-Italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: 
+    // url('./assets/Fonts/Ubuntu/Ubuntu-Bold.ttf');
+    // url('./assets/Fonts/Ubuntu/Ubuntu-BoldItalic.ttf'),
+    // url('./assets/Fonts/Ubuntu/Ubuntu-Italic.ttf'),
+    // url('./assets/Fonts/Ubuntu/Ubuntu-Light.ttf'),
+    // url('./assets/Fonts/Ubuntu/Ubuntu-LightItalic.ttf'),
+    // url('./assets/Fonts/Ubuntu/Ubuntu-Medium.ttf'),
+    // url('./assets/Fonts/Ubuntu/Ubuntu-MediumItalic.ttf'),
+    url('./assets/Fonts/Ubuntu/Ubuntu-Regular.ttf');
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: 
+    // url('./assets/Fonts/Montserrat/Montserrat-Black.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-BlackItalic.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-Bold.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-BoldItalic.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-ExtraBold.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-ExtraLight.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-ExtraLightItalic.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-Italic.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-Light.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-LightItalic.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-Medium.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-MediumItalic.ttf'),
+    url('./assets/Fonts/Montserrat/Montserrat-Regular.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-SemiBold.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-SemiBoldItalic.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-Thin.ttf'),
+    // url('./assets/Fonts/Montserrat/Montserrat-ThinItalic.ttf');
+} */
 
 $white: #ffffff;
 $black: #000000;
@@ -24,45 +61,6 @@ $sunGlowY: #ffd23f;
 $jonquilY: #f9c80e;
 $lightGrey: #dad2d8;
 $navajoWhite: #f6d8ae;
-
-
-
-// @font-face {
-//   font-family: 'Ubuntu';
-//   src: 
-//     // url('./assets/Fonts/Ubuntu/Ubuntu-Bold.ttf');
-//     // url('./assets/Fonts/Ubuntu/Ubuntu-BoldItalic.ttf'),
-//     // url('./assets/Fonts/Ubuntu/Ubuntu-Italic.ttf'),
-//     // url('./assets/Fonts/Ubuntu/Ubuntu-Light.ttf'),
-//     // url('./assets/Fonts/Ubuntu/Ubuntu-LightItalic.ttf'),
-//     // url('./assets/Fonts/Ubuntu/Ubuntu-Medium.ttf'),
-//     // url('./assets/Fonts/Ubuntu/Ubuntu-MediumItalic.ttf'),
-//     url('./assets/Fonts/Ubuntu/Ubuntu-Regular.ttf');
-
-// }
-
-// @font-face {
-//   font-family: 'Montserrat';
-//   src: 
-//     // url('./assets/Fonts/Montserrat/Montserrat-Black.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-BlackItalic.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-Bold.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-BoldItalic.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-ExtraBold.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-ExtraLight.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-ExtraLightItalic.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-Italic.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-Light.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-LightItalic.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-Medium.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-MediumItalic.ttf'),
-//     url('./assets/Fonts/Montserrat/Montserrat-Regular.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-SemiBold.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-SemiBoldItalic.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-Thin.ttf'),
-//     // url('./assets/Fonts/Montserrat/Montserrat-ThinItalic.ttf');
-// }
 
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500&display=swap');
 

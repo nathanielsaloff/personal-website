@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import './style.scss'
 // import registerServiceWorker from './registerServiceWorker'
 
+/* Disable Devtools
+
 // if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object' && process.env.MODE === 'production') {
 //   // or
 //   // const disableDevtools = document.createElement('script')
@@ -23,28 +25,24 @@ import './style.scss'
 //   history.pushState('', '', '')
 // })
 
-const adobeFonts = document.createElement('link')
-adobeFonts.setAttribute('href', 'https://use.typekit.net/fat4lop.css')
-adobeFonts.setAttribute('rel', 'stylesheet')
-document.head.insertAdjacentElement('afterbegin', adobeFonts)
-
-const ui = document.createElement('div')
-ui.id = 'uiEntry'
-// ui.style.overflow = 'scroll'
-document.body.insertAdjacentElement('afterbegin', ui)
-ui.addEventListener('scroll', e => {
-  console.log('ui container scrolling')
-})
-// to move scrolling event in for scroll snap
-// ui.style.cssText = 'position: absolute;top: 0px; left: 0px; width: 100vw; height: 100vh; overflow-y: scroll;'
-ui.style.position = 'fixed'
-// scroll events not firing, perhaps because of the scroll libraries or functions.
-document.addEventListener('scroll', e => { console.log('document scrolling') })
-document.body.addEventListener('scroll', e => { console.log('body scrolling') })
-
 // window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {}
 
-/*
+*/
+
+
+// Adobe Fonts
+  const adobeFonts = document.createElement('link')
+  adobeFonts.setAttribute('href', 'https://use.typekit.net/fat4lop.css')
+  adobeFonts.setAttribute('rel', 'stylesheet')
+  document.head.insertAdjacentElement('afterbegin', adobeFonts)
+
+// App UI container
+  const ui = document.createElement('div')
+  ui.id = 'uiEntry'
+  
+  document.body.insertAdjacentElement('afterbegin', ui)
+
+/* Buy Me A Coffee Widget
 // put in head of html
 <script
       data-name="BMC-Widget"
@@ -60,42 +58,40 @@ document.body.addEventListener('scroll', e => { console.log('body scrolling') })
       data-y_margin="18"
     ></script>
 
+    // const coffeeScript = document.createElement('script')
+    // coffeeScript.src = 'https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js'
+    // coffeeScript.async = true
+    // coffeeScript.setAttribute('data-name', 'BMC-Widget')
+    // coffeeScript.setAttribute('data-cfasync', 'false')
+    // coffeeScript.setAttribute('data-id', 'zevonsocial')
+    // coffeeScript.setAttribute('data-description', 'Support me on Buy me a coffee!')
+    // coffeeScript.setAttribute('data-message', 'This is not a scam 💯. Inbox me if you want to turn your $500 into my $500.')
+    // coffeeScript.setAttribute('data-color', '#FF5F5F')
+    // coffeeScript.setAttribute('data-position', 'Right')
+    // coffeeScript.setAttribute('data-x_margin', '18')
+    // coffeeScript.setAttribute('data-y_margin', '18')
+    // document.head.insertAdjacentElement('beforeend', coffeeScript)
 */
 
-// Google tag
+// Google Tag
 const googleTag = document.createElement('script')
 googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-RYGVF7MLXZ'
 googleTag.async = true
 document.head.insertAdjacentElement('beforeend', googleTag)
+/* Google tag code notes
 // window['dataLayer '] = window['dataLayer '] || []
 // function gtag() { dataLayer.push(arguments) }
 // gtag('js', new Date())
 // gtag('config', 'G-RYGVF7MLXZ')   
+*/
 
-// const coffeeScript = document.createElement('script')
-// coffeeScript.src = 'https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js'
-// coffeeScript.async = true
-// coffeeScript.setAttribute('data-name', 'BMC-Widget')
-// coffeeScript.setAttribute('data-cfasync', 'false')
-// coffeeScript.setAttribute('data-id', 'zevonsocial')
-// coffeeScript.setAttribute('data-description', 'Support me on Buy me a coffee!')
-// coffeeScript.setAttribute('data-message', 'This is not a scam 💯. Inbox me if you want to turn your $500 into my $500.')
-// coffeeScript.setAttribute('data-color', '#FF5F5F')
-// coffeeScript.setAttribute('data-position', 'Right')
-// coffeeScript.setAttribute('data-x_margin', '18')
-// coffeeScript.setAttribute('data-y_margin', '18')
-// document.head.insertAdjacentElement('beforeend', coffeeScript)
-
+// Render 
 const root = createRoot(ui);
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-// ReactDOM.render(<App/>, ui)
-// console.log(App)
-// console.log(typeof App)
 
-// registerServiceWorker()
 reportWebVitals();
 
