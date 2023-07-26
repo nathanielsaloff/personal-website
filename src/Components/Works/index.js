@@ -1,10 +1,13 @@
-import React, { Component, useEffect, useRef } from "react";
+import React, { Component, useEffect, useRef, useState } from "react";
 import colors from "../../colors";
 import webImage from "../../assets/web.svg";
 import hdIcon from "../../assets/half-double-logo.svg";
 import tableImage from "../../assets/table.svg";
 import rightArrow from "../../assets/right-arrow.svg";
 import leftArrow from "../../assets/left-arrow.svg";
+import AirTable from "./AirBadgeTable";
+import tableInterpreter from "./tableState";
+import { useActor } from "@xstate/react";
 
 // PREVIOUSLY SOCIALS!!!!!
 
@@ -15,6 +18,7 @@ import leftArrow from "../../assets/left-arrow.svg";
 const Works = () => {
   const appStyles = { color: "blue" };
   const pStyles = { margin: "2vmin", fontFamily: "Spartan, sans-serif" };
+  const [tableState, tableStateSend] = useActor(tableInterpreter);
   const portfolioItemStyles = {
     width: "100%",
     maxWidth: "100%",
@@ -28,14 +32,14 @@ const Works = () => {
     overflowY: "scroll",
     position: "relative",
   };
-
   const arrowClick = (e) => {
-    e.stopPropagation();
+    // e.stopPropagation();
     console.log(e);
   };
-
+  useEffect(() => {}, [tableState]);
+  // Animations Code
   {
-    //  No longer animating buttons so not needed fgor this but good code if an animation is needed
+    //  No longer animating buttons so not needed now but good code if an animation is needed
     // const clickAnimation = [
     //     [
     //         {
@@ -64,6 +68,7 @@ const Works = () => {
     // ]
     // buttonRef.current.animate(...clickAnimation,15)
   }
+
   return (
     <div
       id="worksSection"
@@ -75,8 +80,11 @@ const Works = () => {
         boxSizing: "border-box",
         display: "flex",
         flexDirection: "column",
+        position: "relative",
       }}
     >
+      {tableState.context.displayTable ? <AirTable tableStateSend={tableStateSend}></AirTable> : null}
+
       <div
         id="worksTitle"
         className="sectionTitle"
@@ -263,8 +271,92 @@ const Works = () => {
           </div>
         </div>
 
-        {/* Create currency input section? */}
-        {/* <div id="currencyInput" style={portfolioItemStyles}>
+        <div id="dataTable" style={portfolioItemStyles}>
+          <div
+            className="swipeLeftIcon"
+            style={{
+              width: "15vmin",
+              height: "15vmin",
+              position: "absolute",
+              bottom: "3vmin",
+              left: "3vmin",
+              zIndex: 1,
+              animationName: "scrollYLeft",
+              animationDuration: "2s",
+              animationIterationCount: "infinite",
+              animationDirection: "alternate",
+            }}
+            onClick={arrowClick}
+          >
+            <img
+              src={leftArrow}
+              style={{
+                height: "100%",
+                width: "100%",
+                position: "absolute",
+                zIndex: 0,
+                left: 0,
+                bottom: 0,
+                opacity: 0.2,
+              }}
+            />
+          </div>
+
+          <img
+            className="backgroundImage"
+            src={tableImage}
+            style={{
+              height: "100%",
+              width: "100%",
+              position: "absolute",
+              zIndex: 0,
+              left: 0,
+              bottom: 0,
+              opacity: 0.2,
+            }}
+          />
+
+          <div id="itemTitle">Data Table</div>
+
+          <div className="itemDescription" style={{}}>
+            This is a data table I coded which can recieve data from a database and display it to the user in a clear
+            format with data flitering by search and option selection. Its also highly editable allowing the user to
+            select which columns to display and displays different columns depending on if the user is on mobile or
+            desktop. I coded this table with React using responsive design, hover modals, state management with state
+            machines, data sorting functions
+            <br />
+            <br />
+            <div
+              id="showTableButton"
+              style={{
+                textDecoration: "none",
+                fontFamily: "Spartan",
+                color: colors.scBlue,
+                position: "relative",
+                border: "2px solid black",
+                padding: "2vmin",
+                width: "max-content",
+                margin: "auto",
+              }}
+              onClick={() => {
+                tableStateSend("SHOW");
+              }}
+            >
+              Show Table
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Works;
+
+/* Create currency input section? */
+
+{
+  /* <div id="currencyInput" style={portfolioItemStyles}>
           <div
             className="swipeLeftIcon"
             style={{
@@ -361,83 +453,5 @@ const Works = () => {
               Check it out!
             </a>
           </div>
-        </div> */}
-
-        <div id="dataTable" style={portfolioItemStyles}>
-          <div
-            className="swipeLeftIcon"
-            style={{
-              width: "15vmin",
-              height: "15vmin",
-              position: "absolute",
-              bottom: "3vmin",
-              left: "3vmin",
-              zIndex: 1,
-              animationName: "scrollYLeft",
-              animationDuration: "2s",
-              animationIterationCount: "infinite",
-              animationDirection: "alternate",
-            }}
-            onClick={arrowClick}
-          >
-            <img
-              src={leftArrow}
-              style={{
-                height: "100%",
-                width: "100%",
-                position: "absolute",
-                zIndex: 0,
-                left: 0,
-                bottom: 0,
-                opacity: 0.2,
-              }}
-            />
-          </div>
-
-          <img
-            className="backgroundImage"
-            src={tableImage}
-            style={{
-              height: "100%",
-              width: "100%",
-              position: "absolute",
-              zIndex: 0,
-              left: 0,
-              bottom: 0,
-              opacity: 0.2,
-            }}
-          />
-
-          <div id="itemTitle">Data Table</div>
-
-          <div className="itemDescription" style={{}}>
-            This is a data table I coded which can recieve data from a database and display it to the user in a clear
-            format with data flitering by search and option selection. Its also highly editable allowing the user to
-            select which columns to display and displays different columns depending on if the user is on mobile or
-            desktop. I coded this table with React using responsive design, hover modals, state management with state
-            machines, data sorting functions
-            <br />
-            <br />
-            <div
-              id="showTableButton"
-              style={{
-                textDecoration: "none",
-                fontFamily: "Spartan",
-                color: colors.scBlue,
-                position: "relative",
-                border: "2px solid black",
-                padding: "2vmin",
-                width: "max-content",
-                margin: "auto",
-              }}
-            >
-              Show Table
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Works;
+        </div> */
+}
