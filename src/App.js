@@ -1,10 +1,9 @@
-
-import React, { Component, useEffect, useRef } from 'react'
-import colors from './colors'
-import LandingSection from './Components/Landing'
-import About from './Components/About'
-import Works from './Components/Works'
-import Contact from './Components/Contact'
+import React, { Component, useEffect, useRef } from "react";
+import colors from "./colors";
+import LandingSection from "./Components/Landing";
+import About from "./Components/About";
+import Works from "./Components/Works";
+import Contact from "./Components/Contact";
 
 // Unused components
 // import { Navigator } from './Components/Navigator'
@@ -14,15 +13,14 @@ import Contact from './Components/Contact'
 // import AirBadgeTable from './Components/_Archived_/AirBadgeTable'
 // import pageScrollerInterpreter, { scroll } from './mainScroller'
 
-// Unused functions 
+// Unused functions
 // import { useActor } from '@xstate/react'
 
 const App = () => {
-
   const appStyles = {
     // background: diraColors.diraBlack,
-    color: colors.aRed
-  }
+    color: colors.aRed,
+  };
 
   // const [state, send] = useActor(pageScrollerInterpreter)
   // const { scrollTop } = document.documentElement
@@ -58,22 +56,21 @@ const App = () => {
       id="mySite"
       style={{
         // for scroll snap moving scroll event in
-        position: 'absolute',
-        top: '0px',
-        left: '0px',
-        overflow: 'hidden',
-        overflowY: 'scroll',
-        width: '100vw',
-        height: '100vh',
+        position: "absolute",
+        top: "0px",
+        left: "0px",
+        overflow: "hidden",
+        overflowY: "scroll",
+        width: "100vw",
+        height: "100vh",
         background: "white",
-        boxSizing: 'border-box',
-        scrollSnapType: 'y mandatory'
+        boxSizing: "border-box",
+        scrollSnapType: "y mandatory",
       }}
-      onScroll={e => {
+      onScroll={(e) => {
         // console.log('mySite scrolling')
       }}
     >
-
       {/* <Navigator /> */}
       {/* <button
         style={{
@@ -89,14 +86,14 @@ const App = () => {
       <About />
       <Works />
       <Contact />
-      
+
       {/* <Blog/> */}
       {/* <Closer /> */}
       {/* <TestingDeployment /> */}
       {/* <Portfolio/> */}
       {/* <AirBadgeTable/> */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
