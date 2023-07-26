@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.43a09314.css",
-    "main.js": "/personal-website/static/js/main.47eb7007.js",
+    "main.css": "/personal-website/static/css/main.bfd1b86b.css",
+    "main.js": "/personal-website/static/js/main.5a81ccf1.js",
     "static/js/27.267ae36e.chunk.js": "/personal-website/static/js/27.267ae36e.chunk.js",
     "static/media/zev-landing-portrait.png": "/personal-website/static/media/zev-landing-portrait.9598b484cc7299194930.png",
-    "static/media/web.svg": "/personal-website/static/media/web.464359bc52ff997a13c456beb29b1a92.svg",
-    "static/media/table.svg": "/personal-website/static/media/table.b6e7c29309eaa7521f954e74c7347129.svg",
+    "static/media/html-css-javascript-311h.png": "/personal-website/static/media/html-css-javascript-311h.2d53b1ed0d7706500c4a.png",
+    "static/media/react-icon-311h.png": "/personal-website/static/media/react-icon-311h.63471b2735272c413f88.png",
+    "static/media/responsive-design-icon-311h.png": "/personal-website/static/media/responsive-design-icon-311h.e7e4f932246d7ea43dc0.png",
+    "static/media/web.svg": "/personal-website/static/media/web.339ec3a151ffd343b1a5f82efc9e3722.svg",
+    "static/media/table.svg": "/personal-website/static/media/table.d3be59bde19e3637a869746836dd162c.svg",
+    "static/media/half-double-logo.svg": "/personal-website/static/media/half-double-logo.c5b7b22bb971d035ed44608b34ebb414.svg",
     "index.html": "/personal-website/index.html",
-    "static/media/left.svg": "/personal-website/static/media/left.dbdc639fec634dd9ddcfc8d0a6304b39.svg",
-    "static/media/right.svg": "/personal-website/static/media/right.32622a6df7dd2ac82a967746e9833c03.svg",
-    "static/media/HD.svg": "/personal-website/static/media/HD.2a9dd9460a51230e309520e70fe9cad1.svg"
+    "static/media/left-arrow.svg": "/personal-website/static/media/left-arrow.05ce0683de14bfb4ab261191b3b82f3c.svg",
+    "static/media/right-arrow.svg": "/personal-website/static/media/right-arrow.00a548d217809d7faa22e5ca2567e396.svg"
   },
   "entrypoints": [
-    "static/css/main.43a09314.css",
-    "static/js/main.47eb7007.js"
+    "static/css/main.bfd1b86b.css",
+    "static/js/main.5a81ccf1.js"
   ]
 }
