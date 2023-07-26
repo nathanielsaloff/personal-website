@@ -264,7 +264,7 @@ const Works = () => {
                 border: "2px solid black",
                 padding: "3vmin",
               }}
-              href="https://nathanielsaloff.github.io/half-double/"
+              href="https://zevsaloff.github.io/half-double/"
             >
               Check it out!
             </a>

@@ -604,7 +604,7 @@ const LandingSection = () => {
           lineHeight: "normal",
         }}
       >
-        nathaniel
+        zev
         <div style={{ fontSize: "50%" }}>coder</div>
       </div>
     </div>
