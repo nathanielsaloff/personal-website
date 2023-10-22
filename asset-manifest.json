@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.bfd1b86b.css",
-    "main.js": "/personal-website/static/js/main.828020e9.js",
+    "main.js": "/personal-website/static/js/main.d1e9e143.js",
     "static/js/27.267ae36e.chunk.js": "/personal-website/static/js/27.267ae36e.chunk.js",
     "static/media/zev-landing-portrait.png": "/personal-website/static/media/zev-landing-portrait.9598b484cc7299194930.png",
     "static/media/html-css-javascript-311h.png": "/personal-website/static/media/html-css-javascript-311h.2d53b1ed0d7706500c4a.png",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.bfd1b86b.css",
-    "static/js/main.828020e9.js"
+    "static/js/main.d1e9e143.js"
   ]
 }
